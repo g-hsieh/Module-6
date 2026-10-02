@@ -10,5 +10,5 @@ else:
     BonusRate = 0.10
     
 Bonus = Salary * BonusRate
-print(f"{'Last Name:':35} {LastName}")
-print(f"{'Bonus according to job level:':35} ${Bonus:.2f}")
+print(f"{'Last Name':<15}{'Salary':>15}{'Bonus':>15}")
+print(f"{LastName:<15}{'$' + format(Salary, ',.2f'):>15}{'$' + format(Bonus, ',.2f'):>15}")
